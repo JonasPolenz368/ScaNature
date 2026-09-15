@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – ScaNature</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+<header><div class="leaf"></div><div class="word">Sca<em>Nature</em></div></header>
+<nav class="lang"><a href="../de/datenschutz">Deutsch</a> · <a href="terms">Terms of Use</a></nav>
+
+<h1>Privacy Policy</h1>
+<p class="meta">Last updated: 18 August 2026 · applies to the iOS app “ScaNature”</p>
+
+<div class="box">
+<p><strong>In short:</strong> ScaNature works without an account and without tracking. Your finds, photos and settings live only on your device. Only for identification is a photo sent once to our server and from there to Google’s image recognition (Gemini) – and it is not stored by us. There are no analytics SDKs, no advertising ID and no sharing for advertising purposes.</p>
+</div>
+
+<h2>1. Controller</h2>
+<p>Jonas Polenz<br>Konradstraße 15<br>90429 Nürnberg, Germany<br>Email: <a href="mailto:jpmini2004@googlemail.com">jpmini2004@googlemail.com</a></p>
+
+<h2>2. Principles</h2>
+<p>We process as little data as possible (data minimisation). The app requires no user account, collects no names, email addresses or device identifiers, and contains no third-party analytics, crash-reporting or advertising software.</p>
+
+<h2>3. What we process and why</h2>
+
+<h3>3.1 Identifying a find (core feature)</h3>
+<p>When you identify a photo, the app sends the (downscaled) photo and your app language to our server (a Cloudflare Worker). The server forwards the photo once to the <em>Google Gemini API</em> image-recognition service, receives the identification and returns it to the app. Our server does not store the photo and does not log any content. The result is stored on your device only if you save the find to your field book.</p>
+<ul>
+<li><strong>Data:</strong> photo, chosen language, technical connection data (IP address) for the duration of the request.</li>
+<li><strong>Purpose:</strong> providing the identification you requested.</li>
+<li><strong>Legal basis:</strong> Art. 6(1)(b) GDPR (performance of a contract).</li>
+<li><strong>Recipients:</strong> Cloudflare, Inc. (hosting) and Google LLC (Gemini API), both USA – see section 5.</li>
+</ul>
+
+<h3>3.2 Abuse protection (App Attest)</h3>
+<p>So that only genuine installations of ScaNature can use our server, the app uses Apple’s <em>App Attest</em>. Your iPhone generates a cryptographic key; Apple confirms that requests come from an unmodified ScaNature app on a real device. Our server stores the <strong>public</strong> part of this key, a counter and the number of free identifications used by this installation. This data contains no device name, no Apple ID and no other identifier that would let us identify you. The record is deleted automatically 12 months after last use; reinstalling creates a new key.</p>
+<ul>
+<li><strong>Purpose:</strong> service security, protection against automated abuse, managing the free tier.</li>
+<li><strong>Legal basis:</strong> Art. 6(1)(f) GDPR (legitimate interest in a secure, abuse-free service).</li>
+</ul>
+
+<h3>3.3 Safety log and acknowledgements (pseudonymous)</h3>
+<p>Because confusing mushrooms, plants, fruits or nuts can be dangerous, our server records for every identification <em>that</em> a result was delivered and with which warnings – not the photo and not the result text. Stored: time, outcome (delivered / withheld / not identifiable), category, scientific name of the identified species, confidence value, whether warnings (“look-alike”, “uncertain identification”, safety note) were included, the versions of your acknowledgements reported by the app (safety notice, opt-in for sensitive categories), app language, app version and the model used. The only reference to your installation is a truncated hash of the App Attest key (a pseudonym; no device name, no Apple ID, no IP address). The app likewise records when you confirm or revoke the safety notice, the terms of use or the opt-in for mushrooms/plants/fruits in the app (time, type, version, language).</p>
+<ul>
+<li><strong>Purpose:</strong> proof that warnings were shown and acknowledgements given (safety, legal defence), and detection of systematic misidentifications to improve warning lists and models.</li>
+<li><strong>Legal basis:</strong> Art. 6(1)(f) GDPR (legitimate interest in user safety, accountability and improving the service); where Art. 6(1)(c) GDPR in connection with product-safety obligations applies, that as well.</li>
+<li><strong>Retention:</strong> 3 years, then automatic deletion.</li>
+</ul>
+
+<h3>3.4 Subscription (ScaNature Pro)</h3>
+<p>Purchases are made exclusively through the Apple App Store; we receive no payment or account details. To manage subscription status we use <em>RevenueCat</em> (RevenueCat, Inc., USA), which works with a random, anonymous identifier. Our server checks that identifier for an active subscription and caches the result for at most one hour – not the identifier itself but a one-way hash of it. So that a subscription is not passed around freely, our server also records which installations it is used from: stored are hashes only (of the identifier and of the App Attest key) together with the time of last use. An entry lapses after 90 days without use, so changing devices remains possible at any time.</p>
+<ul>
+<li><strong>Legal basis:</strong> Art. 6(1)(b) GDPR.</li>
+<li><strong>Recipients:</strong> Apple Inc., RevenueCat, Inc.</li>
+</ul>
+
+<h3>3.5 Place found (optional)</h3>
+<p>Only if you tap “Use my location” when saving a find and grant location permission does your device determine your location once and ask Apple’s geocoding service for a place name. Place name and coordinates are stored only locally in your field book and are never sent to our server.</p>
+<ul><li><strong>Legal basis:</strong> Art. 6(1)(a) GDPR (consent via the iOS location permission; revocable at any time in iOS Settings).</li></ul>
+
+<h3>3.6 Local data on your device</h3>
+<p>Finds, photos, keywords, settings and the free-identification counter are kept in the app’s protected storage on your iPhone. They are deleted when you delete the app. Depending on your iOS settings they may be included in your device backup (iCloud or computer backup).</p>
+
+<h3>3.7 Ad measurement without tracking (SKAdNetwork)</h3>
+<p>If you installed ScaNature via an advertisement, Apple may anonymously inform the ad network through the privacy-preserving <em>SKAdNetwork</em> mechanism that an installation and certain usage steps (e.g. “first identification”, “subscription started”) occurred. No advertising ID, device identifier or personal data is transmitted; neither we nor the ad network can link this to you. That is why the app does not ask for tracking permission.</p>
+<ul><li><strong>Legal basis:</strong> Art. 6(1)(f) GDPR (legitimate interest in measuring advertising without personal reference).</li></ul>
+
+<h3>3.8 Contact by email</h3>
+<p>If you write to us, we process your details to answer your request (Art. 6(1)(b) or (f) GDPR) and delete them once they are no longer needed.</p>
+
+<h2>4. What we do not do</h2>
+<ul>
+<li>no user accounts, no passwords</li>
+<li>no analytics, tracking or advertising SDKs, no advertising ID (IDFA)</li>
+<li>no storage of your photos or result texts on our servers (only the pseudonymous safety log described in 3.3)</li>
+<li>no sharing of data for advertising purposes, no sale of data</li>
+</ul>
+
+<h2>5. Recipients and international transfers</h2>
+<table>
+<tr><th>Service</th><th>Provider</th><th>Purpose</th></tr>
+<tr><td>Hosting (Worker, KV storage)</td><td>Cloudflare, Inc., 101 Townsend St, San Francisco, CA 94107, USA</td><td>Receiving and forwarding identification requests, abuse protection</td></tr>
+<tr><td>Image recognition (Gemini API)</td><td>Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA</td><td>Identifying the photo</td></tr>
+<tr><td>Subscription management</td><td>RevenueCat, Inc., San Francisco, CA, USA</td><td>Checking subscription status</td></tr>
+<tr><td>App Store, payments, App Attest, geocoding, SKAdNetwork</td><td>Apple Inc. / Apple Distribution International Ltd.</td><td>Distribution, payment, device attestation, place names, ad measurement</td></tr>
+</table>
+<p>The US providers named above are certified under the <em>EU-U.S. Data Privacy Framework</em>, and we additionally rely on the EU Standard Contractual Clauses (Art. 46(2)(c) GDPR). Google processes photos in accordance with the Gemini API terms solely to answer the request; we have concluded the required data-processing agreements with these providers.</p>
+
+<h2>6. Retention</h2>
+<ul>
+<li>Photos and identification requests: only for the duration of processing (seconds), no storage.</li>
+<li>App Attest record (public key, counters): up to 12 months after last use.</li>
+<li>Safety log and acknowledgements (pseudonymous, see 3.3): 3 years.</li>
+<li>Subscription-status cache: at most 1 hour.</li>
+<li>Subscription ↔ installation mapping (hashes only): 90 days without use, then deleted automatically.</li>
+<li>Local data: until you delete it in the app or remove the app.</li>
+</ul>
+
+<h2>7. Your rights</h2>
+<p>You have the right of access (Art. 15 GDPR), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20) and to object to processing based on legitimate interests (Art. 21). You may withdraw consent (location) at any time in iOS Settings. You may lodge a complaint with a data protection supervisory authority, e.g. the one responsible for your place of residence.</p>
+<p>Note: because we store no identifiers that would let us identify a person, we generally cannot attribute access or erasure requests concerning server data to a specific person (Art. 11 GDPR). All content data is on your device anyway and can be deleted there directly.</p>
+
+<h2>8. Children</h2>
+<p>ScaNature is not directed at children under 16 and collects no data that would allow us to determine a person’s age or identity.</p>
+
+<h2>9. Changes</h2>
+<p>We update this policy when the app or the legal situation changes. The current version is available in the app (Profile → Privacy) and at this address.</p>
+
+<footer>© 2026 Jonas Polenz · <a href="terms">Terms of Use</a> · <a href="../de/datenschutz">Deutsche Fassung</a></footer>
+</main>
+</body>
+</html>

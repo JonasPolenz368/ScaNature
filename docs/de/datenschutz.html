@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung – ScaNature</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+<header><div class="leaf"></div><div class="word">Sca<em>Nature</em></div></header>
+<nav class="lang"><a href="../en/privacy">English</a> · <a href="nutzungsbedingungen">Nutzungsbedingungen</a></nav>
+
+<h1>Datenschutzerklärung</h1>
+<p class="meta">Stand: 18. August 2026 · gilt für die iOS-App „ScaNature"</p>
+
+<div class="box">
+<p><strong>Kurz gesagt:</strong> ScaNature funktioniert ohne Konto und ohne Tracking. Deine Funde, Fotos und Einstellungen liegen ausschließlich auf deinem Gerät. Nur zur Bestimmung wird ein Foto einmalig an unseren Server und von dort an die Bilderkennung von Google (Gemini) übermittelt – und dort nicht von uns gespeichert. Es gibt keine Analyse-SDKs, keine Werbe-ID, keine Weitergabe zu Werbezwecken.</p>
+</div>
+
+<h2>1. Verantwortlicher</h2>
+<p>Jonas Polenz<br>Konradstraße 15<br>90429 Nürnberg, Deutschland<br>E-Mail: <a href="mailto:jpmini2004@googlemail.com">jpmini2004@googlemail.com</a></p>
+
+<h2>2. Grundsätze</h2>
+<p>Wir verarbeiten so wenige Daten wie möglich („Datenminimierung"). Die App verlangt kein Nutzerkonto, erhebt keine Namen, E-Mail-Adressen oder Gerätekennungen und enthält keine Analyse-, Crash-Reporting- oder Werbe-Software von Drittanbietern.</p>
+
+<h2>3. Welche Daten wir wofür verarbeiten</h2>
+
+<h3>3.1 Bestimmung eines Fundes (Kernfunktion)</h3>
+<p>Wenn du ein Foto bestimmen lässt, sendet die App das Foto (verkleinert) und deine App-Sprache an unseren Server (Cloudflare Worker). Der Server leitet das Foto einmalig an die Bilderkennungs-Schnittstelle <em>Google Gemini API</em> weiter, empfängt die Bestimmung und gibt sie an die App zurück. Unser Server speichert das Foto nicht und protokolliert keine Inhalte. Das Ergebnis wird nur auf deinem Gerät gespeichert, wenn du den Fund in dein Feldbuch übernimmst.</p>
+<ul>
+<li><strong>Daten:</strong> Foto, gewählte Sprache, technische Verbindungsdaten (IP-Adresse) für die Dauer der Anfrage.</li>
+<li><strong>Zweck:</strong> Erbringung der von dir angeforderten Bestimmung.</li>
+<li><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung).</li>
+<li><strong>Empfänger:</strong> Cloudflare, Inc. (Serverbetrieb) und Google LLC (Gemini API), beide USA – siehe Abschnitt 5.</li>
+</ul>
+
+<h3>3.2 Schutz vor Missbrauch (App Attest)</h3>
+<p>Damit nur echte Installationen von ScaNature unseren Server nutzen können, verwendet die App Apples <em>App Attest</em>. Dabei erzeugt dein iPhone einen kryptografischen Schlüssel; Apple bestätigt, dass die Anfrage von einer unveränderten ScaNature-App auf einem echten Gerät stammt. Unser Server speichert den <strong>öffentlichen</strong> Teil dieses Schlüssels, einen Zähler und die Anzahl der kostenlosen Bestimmungen dieser Installation. Diese Daten enthalten keinen Gerätenamen, keine Apple-ID und keine sonstige Kennung, mit der wir dich identifizieren könnten. Der Eintrag wird 12 Monate nach der letzten Nutzung automatisch gelöscht; bei Neuinstallation entsteht ein neuer Schlüssel.</p>
+<ul>
+<li><strong>Zweck:</strong> Sicherheit des Dienstes, Schutz vor automatisiertem Missbrauch, Verwaltung des kostenlosen Kontingents.</li>
+<li><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem sicheren, missbrauchsfreien Betrieb).</li>
+</ul>
+
+<h3>3.3 Sicherheitsprotokoll und Bestätigungen (pseudonym)</h3>
+<p>Weil Verwechslungen bei Pilzen, Pflanzen, Früchten und Nüssen gefährlich sein können, dokumentiert unser Server bei jeder Bestimmung, <em>dass</em> und mit welchen Hinweisen ein Ergebnis ausgeliefert wurde – nicht das Foto und nicht den Ergebnistext. Gespeichert werden: Zeitpunkt, Ergebnisart (ausgeliefert / zurückgehalten / nicht bestimmbar), Kategorie, wissenschaftlicher Name der bestimmten Art, Konfidenzwert, ob Warnhinweise („Verwechslungsgefahr", „unsichere Bestimmung", Sicherheitshinweis) enthalten waren, die von der App gemeldeten Versionen deiner Bestätigungen (Sicherheitshinweis, Freischaltung sensibler Kategorien), App-Sprache, App-Version und verwendetes Modell. Als Bezug zur Installation dient ausschließlich ein gekürzter Hash-Wert des App-Attest-Schlüssels (Pseudonym; kein Gerätename, keine Apple-ID, keine IP-Adresse). Ebenso protokolliert die App, wenn du in der App den Sicherheitshinweis, die Nutzungsbedingungen oder die Freischaltung für Pilze/Pflanzen/Früchte bestätigst oder widerrufst (Zeitpunkt, Art, Version, Sprache).</p>
+<ul>
+<li><strong>Zweck:</strong> Nachweis, dass Warnhinweise angezeigt und Bestätigungen erteilt wurden (Sicherheit, Rechtsverteidigung), sowie Erkennen systematischer Fehlbestimmungen, um Warnlisten und Modelle zu verbessern.</li>
+<li><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an Sicherheit der Nutzer, Nachweisbarkeit und Verbesserung des Dienstes); soweit Art. 6 Abs. 1 lit. c DSGVO in Verbindung mit produktsicherheitsrechtlichen Pflichten einschlägig ist, auch diese.</li>
+<li><strong>Speicherdauer:</strong> 3 Jahre, danach automatische Löschung.</li>
+</ul>
+
+<h3>3.4 Abonnement (ScaNature Pro)</h3>
+<p>Käufe laufen ausschließlich über den Apple App Store. Wir erhalten keine Zahlungs- oder Kontodaten. Zur Verwaltung des Abo-Status nutzen wir <em>RevenueCat</em> (RevenueCat, Inc., USA), das mit einer zufälligen, anonymen Kennung arbeitet. Unser Server prüft anhand dieser Kennung, ob ein aktives Abo besteht, und speichert das Ergebnis höchstens eine Stunde lang – nicht die Kennung selbst, sondern einen nicht rückrechenbaren Hashwert. Damit ein Abo nicht beliebig weitergegeben wird, merkt sich unser Server zusätzlich, von welchen Installationen es genutzt wird: gespeichert werden ausschließlich Hashwerte (der Kennung und des App-Attest-Schlüssels) mit dem Zeitpunkt der letzten Nutzung. Ein Eintrag verfällt nach 90 Tagen ohne Nutzung, sodass ein Gerätewechsel jederzeit möglich bleibt.</p>
+<ul>
+<li><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO.</li>
+<li><strong>Empfänger:</strong> Apple Inc., RevenueCat, Inc.</li>
+</ul>
+
+<h3>3.5 Fundort (optional)</h3>
+<p>Nur wenn du beim Speichern eines Fundes auf „Ort ermitteln" tippst und die Standortberechtigung erteilst, ermittelt dein Gerät einmalig deinen Standort und fragt Apples Geocoding-Dienst nach einem Ortsnamen. Ortsname und Koordinaten werden ausschließlich lokal in deinem Feldbuch gespeichert und niemals an unseren Server gesendet.</p>
+<ul>
+<li><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. a DSGVO (Einwilligung über die iOS-Standortberechtigung; jederzeit in den iOS-Einstellungen widerrufbar).</li>
+</ul>
+
+<h3>3.6 Lokale Daten auf deinem Gerät</h3>
+<p>Funde, Fotos, Stichwörter, Einstellungen und der Zähler der kostenlosen Bestimmungen liegen im geschützten Speicherbereich der App auf deinem iPhone. Sie werden gelöscht, wenn du die App löschst. Je nach deinen iOS-Einstellungen können sie Teil deiner Gerätesicherung (iCloud- oder Computer-Backup) sein.</p>
+
+<h3>3.7 Werbe-Erfolgsmessung ohne Tracking (SKAdNetwork)</h3>
+<p>Wenn du ScaNature über eine Anzeige installiert hast, kann Apple dem Werbenetzwerk über das datenschutzfreundliche Verfahren <em>SKAdNetwork</em> anonym mitteilen, dass eine Installation und bestimmte Nutzungsschritte (z. B. „erste Bestimmung", „Abo gestartet") stattgefunden haben. Dabei werden keine Werbe-ID, keine Gerätekennung und keine personenbezogenen Daten übermittelt; eine Zuordnung zu dir ist weder uns noch dem Werbenetzwerk möglich. Deshalb fragt die App auch keine Tracking-Erlaubnis ab.</p>
+<ul><li><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Erfolgsmessung von Werbung ohne Personenbezug).</li></ul>
+
+<h3>3.8 Kontakt per E-Mail</h3>
+<p>Wenn du uns schreibst, verarbeiten wir deine Angaben zur Beantwortung der Anfrage (Art. 6 Abs. 1 lit. b bzw. f DSGVO) und löschen sie, sobald sie nicht mehr erforderlich sind.</p>
+
+<h2>4. Was wir nicht tun</h2>
+<ul>
+<li>keine Nutzerkonten, keine Passwörter</li>
+<li>keine Analyse-, Tracking- oder Werbe-SDKs, keine Werbe-ID (IDFA)</li>
+<li>keine Speicherung deiner Fotos oder Ergebnistexte auf unseren Servern (nur das pseudonyme Sicherheitsprotokoll nach 3.3)</li>
+<li>keine Weitergabe von Daten zu Werbezwecken, kein Verkauf von Daten</li>
+</ul>
+
+<h2>5. Empfänger und Drittlandübermittlung</h2>
+<table>
+<tr><th>Dienst</th><th>Anbieter</th><th>Zweck</th></tr>
+<tr><td>Serverbetrieb (Worker, KV-Speicher)</td><td>Cloudflare, Inc., 101 Townsend St, San Francisco, CA 94107, USA</td><td>Entgegennahme und Weiterleitung der Bestimmungsanfrage, Missbrauchsschutz</td></tr>
+<tr><td>Bilderkennung (Gemini API)</td><td>Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA</td><td>Bestimmung des Fotos</td></tr>
+<tr><td>Abo-Verwaltung</td><td>RevenueCat, Inc., San Francisco, CA, USA</td><td>Prüfung des Abo-Status</td></tr>
+<tr><td>App Store, Zahlungen, App Attest, Geocoding, SKAdNetwork</td><td>Apple Inc. / Apple Distribution International Ltd.</td><td>Vertrieb, Zahlung, Gerätebestätigung, Ortsname, Werbe-Erfolgsmessung</td></tr>
+</table>
+<p>Die genannten US-Anbieter sind nach dem <em>EU-U.S. Data Privacy Framework</em> zertifiziert bzw. wir stützen die Übermittlung ergänzend auf die EU-Standardvertragsklauseln (Art. 46 Abs. 2 lit. c DSGVO). Fotos werden von Google gemäß den Nutzungsbedingungen der Gemini API zur Beantwortung der Anfrage verarbeitet; wir haben mit den Anbietern die erforderlichen Verträge zur Auftragsverarbeitung geschlossen.</p>
+
+<h2>6. Speicherdauer</h2>
+<ul>
+<li>Fotos und Bestimmungsanfragen: nur für die Dauer der Verarbeitung (Sekunden), keine Speicherung.</li>
+<li>App-Attest-Eintrag (öffentlicher Schlüssel, Zähler): bis 12 Monate nach der letzten Nutzung.</li>
+<li>Zuordnung Abo ↔ Installation (nur Hashwerte): 90 Tage ohne Nutzung, danach automatisch gelöscht.</li>
+<li>Sicherheitsprotokoll und Bestätigungen (pseudonym, siehe 3.3): 3 Jahre.</li>
+<li>Abo-Status-Cache: höchstens 1 Stunde.</li>
+<li>Lokale Daten: bis du sie in der App löschst oder die App entfernst.</li>
+</ul>
+
+<h2>7. Deine Rechte</h2>
+<p>Du hast das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch gegen Verarbeitungen auf Grundlage berechtigter Interessen (Art. 21). Eine erteilte Einwilligung (Standort) kannst du jederzeit in den iOS-Einstellungen widerrufen. Du kannst dich bei einer Datenschutz-Aufsichtsbehörde beschweren, z. B. bei der für deinen Wohnort zuständigen Landesbehörde.</p>
+<p>Hinweis: Da wir keine Kennungen speichern, mit denen wir eine Person identifizieren könnten, können wir Auskunfts- oder Löschanfragen zu Server-Daten in der Regel nicht einer bestimmten Person zuordnen (Art. 11 DSGVO). Alle inhaltlichen Daten befinden sich ohnehin ausschließlich auf deinem Gerät und lassen sich dort direkt löschen.</p>
+
+<h2>8. Kinder</h2>
+<p>ScaNature richtet sich nicht gezielt an Kinder unter 16 Jahren und erhebt keine Daten, mit denen sich das Alter oder die Identität einer Person feststellen ließe.</p>
+
+<h2>9. Änderungen</h2>
+<p>Wir passen diese Erklärung an, wenn sich die App oder die Rechtslage ändert. Die jeweils aktuelle Fassung ist in der App (Profil → Datenschutz) und unter dieser Adresse abrufbar.</p>
+
+<footer>© 2026 Jonas Polenz · <a href="nutzungsbedingungen">Nutzungsbedingungen</a> · <a href="../en/privacy">English version</a></footer>
+</main>
+</body>
+</html>
